@@ -1,0 +1,69 @@
+/*
+Theme Name: Underscores Child
+Template: underscores
+*/
+
+
+
+/*  News shortcode   */
+
+.news-posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.news-post {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.news-post-image {
+    margin-right: 20px;
+    width:100%;
+    max-width: 490px;
+    height: calc((100vw - 40px) * 0.67);
+    max-height: 328px;
+    overflow: hidden;
+    display: flex;
+}
+
+.news-post-image img{
+	width:100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	display: flex;
+}
+
+.news-post-content {
+    width:calc(100% - 20px - 490px);
+}
+
+@media (max-width: 768px) {
+    .news-post {
+        flex-direction: column;
+    }
+
+    .news-post-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .news-post-content {
+	    width:100%;
+	}
+
+	.news-post a {
+		font-size: 18px;
+		margin-top:0;
+		padding:12px 0;
+	}
+}
+
+/*  /News shortcode   */
